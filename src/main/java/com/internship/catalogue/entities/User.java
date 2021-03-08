@@ -44,7 +44,7 @@ public class User implements Serializable {
 
 	@NotBlank
     @Size(min=3, max = 50)
-	private String CNI;
+	private String cni;
 	
 	@NotBlank
     @Size(min=3, max = 50)
@@ -60,7 +60,7 @@ public class User implements Serializable {
 	private String username;
 	
 	@NotBlank
-    @Size(min=6, max = 100)
+    @Size(min=4, max = 100)
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
 	@ToString.Exclude
 	private String password;
@@ -72,5 +72,13 @@ public class User implements Serializable {
 	public User(){
 		super();
 	}
+	
+	public User(String CNI, String name, String email, String username, String password) {
+        this.cni = CNI;
+		this.nom = name;
+        this.username = username;
+        this.email = email;
+        this.password = password;
+    }
 
 }
