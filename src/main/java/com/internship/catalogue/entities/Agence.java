@@ -16,7 +16,7 @@ import javax.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.ToString;
-
+/*
 @Entity
 @ToString
 @AllArgsConstructor
@@ -24,9 +24,7 @@ import lombok.ToString;
 @Table(name = "agences", uniqueConstraints = { @UniqueConstraint(columnNames = { "code" })})
 public class Agence implements Serializable  {
 
-	/**
-	 * 
-	 */
+	
 	private static final long serialVersionUID = 1L;
 	
 	@Id
@@ -50,3 +48,4 @@ public class Agence implements Serializable  {
 	
 
 }
+*/
