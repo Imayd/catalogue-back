@@ -30,7 +30,7 @@ public class MarketService implements IMarketService {
 		}
 		else if(!marketRepository.findByAbreviation(market.getAbreviation()).isEmpty()) {
 			
-			throw new Exception("Abreviation  " + market.getAbreviation()+ " exist deja");
+			throw new Exception("L'abreviation  " + market.getAbreviation()+ " exist deja");
 			
 		}else
 		{
